@@ -1,0 +1,15 @@
+app:
+  name: poi-backend-app
+  namespace: rhsummit23
+  cluster: .apps.summit23-dr.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23DevRHEL/rhsummit23-backend
+  org: Summit23DevRHEL
+  name: rhsummit23-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: rhsummit23/poi-backend-app
+  tag: latest
